@@ -1,0 +1,21 @@
+:root {
+  /* Colors  */
+  --bg-color-dark: #000;
+  --color-text: #fff;
+  --color-primary: #2196f3;
+  --color-description-task: #8d8d8d;
+  --color-border-task: #3f3f3f;
+  --color-menu-inactive: #b9b9b9;
+
+  /* Typography  */
+  --typography-headline: 28px;
+  --typography-h6: 20px;
+
+  --typography-task-title: 16px;
+  --typography-task-description: 14px;
+
+  --typography-footer_button-active: 14px;
+  --typography-footer_button-inactive: 12px;
+
+  --typography-NavBar-button: 14px;
+}

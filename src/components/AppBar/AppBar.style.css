@@ -1,0 +1,18 @@
+.AppBar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+}
+
+.AppBar__Header {
+  font-size: var(--typography-h6);
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.AppBar__Button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

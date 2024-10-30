@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.todo-header_container,
+.task-list {
+  padding: 16px 18px;
+}
+body {
+  background-color: var(--bg-color-dark);
+  font-family: Roboto;
+  color: var(--color-text);
+}
+
+.todo-header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-header__title {
+  font-size: var(--typography-headline);
+  font-weight: 400;
+  line-height: 36px;
+}
+
+button {
+  cursor: pointer;
+}
