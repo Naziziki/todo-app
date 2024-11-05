@@ -19,7 +19,7 @@ export default function NavBar() {
         bottom: '0',
         left: '0',
         width: '100%',
-
+        height: '72px',
     }}>
 
       <CustomBottomNavigationAction label='Home' icon={<HomeIcon /> } />
