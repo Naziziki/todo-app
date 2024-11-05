@@ -1,7 +1,7 @@
 import "./css/main.css";
 import "./css/_variables.css";
 
-import Button from "./components/Button/Button";
+import MainButton from "./components/Button/Button";
 import TaskList from "./components/TaskList/TaskList";
 
 import AppBar from "./components/AppBar/AppBar";
@@ -13,10 +13,9 @@ export default function App() {
       <AppBar />
       <div className="todo-header_container">
         <div className="todo-header__title">ToDo's </div>
-        <Button label="add task" />
+        <MainButton label="add task" />
       </div>
       <TaskList />
-
       <NavBar />
     </div>
   );

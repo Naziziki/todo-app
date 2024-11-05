@@ -1,4 +1,7 @@
 import "./TaskList.style.css";
+
+import IconButton from "@mui/material/IconButton";
+
 import DeleteIcon from "../Icons/DeleteIcon";
 import Checkbox from "../Checkbox/Checkbox";
 
@@ -13,7 +16,8 @@ const tasks = [
   },
 ];
 
-function TaskList() {
+
+export default function TaskList() {
   return (
     <div className="task-list">
       {tasks.map((task, index) => (
@@ -25,13 +29,11 @@ function TaskList() {
               <span className="task-subtitle">{task.description}</span>
             </label>
           </div>
-          <button className="button_delete-task">
+          <IconButton color='error'>
             <DeleteIcon />
-          </button>
+          </IconButton>
         </div>
       ))}
     </div>
   );
-}
-
-export default TaskList;
+} 

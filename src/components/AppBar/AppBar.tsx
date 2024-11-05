@@ -1,16 +1,20 @@
 import "./AppBar.style.css";
 
 import AppBarMenuIcon from "../Icons/AppBarMenuIcon";
+import styled from '@emotion/styled';
+import IconButton  from "@mui/material/IconButton";
 
-function AppBar() {
+const AppBarMenuButton = styled(IconButton)`
+color: white;
+padding: 6px 3px`;
+
+export default function AppBar() {
   return (
     <div className="AppBar">
-      <button className="AppBar__Button">
+      <AppBarMenuButton disabled className="AppBar__Button">
         <AppBarMenuIcon />
-      </button>
+      </AppBarMenuButton >
       <div className="AppBar__Header">Home</div>
     </div>
   );
 }
-
-export default AppBar;

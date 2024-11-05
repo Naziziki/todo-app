@@ -1,30 +1,18 @@
-import "./Checkbox.style.css";
-
-import { useState } from "react";
+import Checkbox from '@mui/material/Checkbox';
+import styled from '@emotion/styled';
 
 type CheckboxType = {
   id: string;
 };
 
-function Checkbox({ id }: CheckboxType) {
-  const [isChecked, setIsChecked] = useState(false);
+const CustomCheckbox = styled(Checkbox)
+  `color: white;
+  padding: 12px;`;
 
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
-
-  return (
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          checked={isChecked}
-          id={id}
-          onChange={handleCheckboxChange}
-        />
-      </label>
-    </div>
-  );
+export default function CheckboxUsage({id}:CheckboxType) {
+return (
+  <CustomCheckbox color='primary' size="medium" id={id} />
+);
 }
 
-export default Checkbox;
+
